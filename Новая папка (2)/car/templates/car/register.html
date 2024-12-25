@@ -1,0 +1,17 @@
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Register</title>
+       </head>
+       <body>
+           <h2>Royxatdan otish</h2>
+           <form method="post">
+               {% csrf_token %}
+               {{ form.as_p }}
+               <button type="submit">Royxatdan otish</button>
+                <p>Akkauntingiz bormi? <a href="{% url 'login' %}">Tizimga kirish</a></p>
+           </form>
+       </body>
+       </html>
